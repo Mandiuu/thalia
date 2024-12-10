@@ -78,12 +78,12 @@
         }
     
         .about-section .description h2 {
-            font-size: 2.5rem;
+            font-size: 1.4rem;
             color: #f5f5f5;
         }
     
         .about-section .description p {
-            line-height: 1.8;
+            line-height: 1.2;
             font-size: 1.2rem;
             color: #cccccc;
         }
@@ -117,15 +117,21 @@
                 padding: 10px 20px; /* Add padding for better spacing */
                 text-align: center;
             }
-    
-            .about-section .description h2 {
-                font-size: 2rem; /* Adjust heading size for mobile */
-            }
-    
-            .about-section .description p {
-                font-size: 1rem; /* Adjust text size for mobile */
-                line-height: 1.5;
-            }
+
+            @media (max-width: 768px) {
+    #header h1 {
+        font-size: 1.2rem; /* Further reduce title size for mobile */
+    }
+
+    .about-section .description h2 {
+        font-size: 1.3rem; /* Adjust heading size for mobile */
+    }
+
+    .about-section .description p {
+        font-size: 0.9rem; /* Smaller font size for paragraphs on mobile */
+        line-height: 1.4; /* Adjust spacing for mobile readability */
+    }
+}
         }
     </style>
     
@@ -156,8 +162,12 @@
                 </div>
                 <div class="description">
                     <h2>About Me</h2>
-                    <p>This portfolio showcases various projects created by Thalia, focusing on video production and storytelling.</p>
-                    <p>Thalia is a video producer and storyteller with experience in creating impactful documentaries and narratives. With a keen eye for detail and a passion for creative expression, Thalia's work aims to inspire and educate.</p>
+                    <p>I'm an Ecuadorian documentary filmmaker and journalist based in New York City.  I focus on the intersections of immigration and the Latino community, arts, and culture..</p>
+                    <p>I have worked as an on-air radio talent and producer for Spanish-speaking media outlets. As a producer for a New York production company, I have worked in the making of documentary and fiction short films, institutional videos, and grant writing.
+                   <p>As a documentarian, I seek to work with a light footprint and capture intimate moments with authenticity. I approach my work with empathy, efficient communication, and creativity.</p>
+                   <p>I recently graduated from Columbia Graduate School of Journalism with honors in documentary filmmaking and documentary thesis production.</p>
+                   
+                    </p>
                 </div>
             </div>
         </div>
