@@ -5,6 +5,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
     <link rel="stylesheet" href="assets/css/main.css" />
+    <link rel="stylesheet" href="assets/css/header.css" />
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
 
     <style>
@@ -142,16 +143,18 @@
     <div id="wrapper">
         <!-- Header -->
         <header id="header">
-            <h1><a href="index.html"><strong>THALÍA'S</strong> PORTFOLIO</a></h1>
-            <nav>
-                <ul>
-                    <li><a href="written_word.html" class="icon solid fa-book">Written Word</a></li>
-                    <li><a href="audio.html" class="icon solid fa-music">Audio</a></li>
-                    <li><a href="index.html" class="icon solid fa-film">Film/Video</a></li>
-                    <li><a href="about.html" class="icon solid fa-info-circle">About</a></li>
-                </ul>
-            </nav>
-        </header>
+			<h1><a href="index.html"><strong>THALÍA'S</strong> PORTFOLIO</a></h1>
+			<button id="menu-toggle">☰</button>
+			<nav>
+				<ul id="menu">
+					<li><a href="written_word.html" class="icon solid fa-book">Written Word</a></li>
+					<li><a href="audio.html" class="icon solid fa-music">Audio</a></li>
+					<li><a href="index.html" class="icon solid fa-film">Film/Video</a></li>
+					<li><a href="about.html" class="icon solid fa-info-circle">About</a></li>
+				</ul>
+			</nav>
+		</header>
+		
 
      
                 <div id="main">
@@ -178,5 +181,16 @@
             </div>
         </div>
     </div>
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+    const menuToggle = document.getElementById("menu-toggle");
+    const menu = document.getElementById("menu");
+
+    menuToggle.addEventListener("click", () => {
+        menu.classList.toggle("show");
+    });
+});
+
+    </script>
 </body>
 </html>
